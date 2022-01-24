@@ -14,8 +14,8 @@
     </div>
     <span id="main" class="gauges">
         <form>
-            <label for="wind"><h3>WIND</h3></label>
-            <input type="range" id="windy" name="windy">
+            <label for="wind"><h3>WIND: m/s</h3></label>
+            <input type="range" min="0" max="30" id="windy" name="windy" oninput="mySlider(this.value)">
         </form>  
     </span>
     <span id="rpm">
