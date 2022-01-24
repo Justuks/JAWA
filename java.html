@@ -16,8 +16,12 @@
     <span id="main" class="gauges">
         <form>
             <label for="wind"><h3>WIND: m/s</h3></label>
-            <input type="range" min="0" max="30" value="1" id="windy" name="windy" oninput="mySlider(this.value)">
+            <input type="range" min="0" max="30" value="0" id="windy" name="windy" oninput="mySlider(this.value)">
         </form>  
+        <span id="value">
+            <h3>Value:</h3>
+            <span id="windSpeed"></span>
+        </span>
     </span>
     <span id="rpm">
         <h3>R P M</h3>
@@ -38,7 +42,9 @@
     <span id="fuelConsumption">
         <h3>FUEL: Litres/Hour</h3>
     </span>
-    <span id="fuelDigits">5</span>
+    <span id="fuelDigits">
+        <h2>5</h2>
+    </span>
     <span id="rangeFinder">
         <h3>RANGE: Nautical Miles</h3>
     </span>
