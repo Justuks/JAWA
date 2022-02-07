@@ -1,56 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="java.css" type="text/css" rel="stylesheet">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="java.css">
 </head>
 <body>
-    <h1>NAVAL PARROT</h1>
-    <h2>Welcome back captain, new horizons await you.</h2>
-    <div id="initialization">
-        <h2> Lets<button id="display" onclick="parodyk()"><h2> begin!</h2></button></h2>
+    <div class="grid">
+        <div id="quiz">
+            <h1>Quiz in JavaScript</h1>
+            <hr style="margin-bottom: 20px">
+ 
+            <p id="question"></p>
+ 
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+ 
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
     </div>
-    <span id="main" class="gauges">
-        <form>
-            <label for="wind"><h3>WIND: m/s</h3></label>
-            <input type="range" min="0" max="30" value="0" id="windy" name="windy" oninput="mySlider(this.value)">
-        </form>  
-        <span id="value">
-            <h3>Value:</h3>
-            <span id="windSpeed"></span>
-        </span>
-    </span>
-    <span id="rpm">
-        <h3>R P M</h3>
-    </span>
-    <span id="RPMdigits">
-        <h2>600</h2>
-    </span>
-    <span id="increment">
-        <button>
-            <h4>INCREASE</h4>
-        </button>
-    </span>
-    <span id="decrement">
-        <button>
-            <h4>DECREASE</h4>
-        </button>
-    </span>
-    <span id="fuelConsumption">
-        <h3>FUEL: Litres/Hour</h3>
-    </span>
-    <span id="fuelDigits">
-        <h2>5</h2>
-    </span>
-    <span id="rangeFinder">
-        <h3>RANGE: Nautical Miles</h3>
-    </span>
-    <span id="defaultRange">
-        <h2>500</h2>
-    </span>
-    <script src="java.js"></script>
+ 
+ 
+<script src="java.js"></script>
+ 
 </body>
 </html>
+
